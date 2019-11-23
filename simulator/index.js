@@ -4527,6 +4527,18 @@ var canvasPainter = {
     return false;
     }
 
+    //esc
+    if (e.keyCode == 27)
+    {
+      if (isConstructing)
+      {
+        removeObj(selectedObj);
+        draw();
+      }
+      return false;
+    }
+
+
     //Ctrl
     /*
     if(e.keyCode==17)
