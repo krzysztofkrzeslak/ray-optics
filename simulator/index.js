@@ -4534,6 +4534,11 @@ var canvasPainter = {
       {
         removeObj(selectedObj);
         draw();
+      }else{
+        document.getElementById('obj_settings').style.display = 'none';
+        window.toolBarViewModel.tools.selected("Move View"); //just selection move tool
+        toolbtn_clicked(""); //this is actually activate-ing move tool
+
       }
       return false;
     }
