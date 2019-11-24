@@ -34,10 +34,10 @@
 
   <canvas id="canvas1" style="position: absolute; top: 0; left: 0; z-index: -1">
   </canvas>
-  <div id="toolbar" class="btn-group" style="background-color: white" data-bind="foreach: toolbarGroups">
+  <div id="toolbar" class="btn-group" style="background-color: #6c747d9e" data-bind="foreach: toolbarGroups">
     <!-- ko if: groupType == 2/*GroupTypeEnum.DROPDOWN*/ -->
     <div class="btn-group" role="group">
-      <button data-bind="text: getLocaleName()" id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </button>
+      <button data-bind="text: getLocaleName()" id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle font-bold" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
         <!-- ko foreach: tools -->
         <!-- Currently only button implemented: TODO other elements-->
@@ -74,7 +74,7 @@
         <div class="dropdown-menu" style="padding:0; margin:0; min-width:100%;">
           <div class="btn-group-vertical" style="padding:0; margin:0; width:100%" data-toggle="buttons">
             <!-- ko foreach: content -->
-            <label class="btn btn-primary" style="margin:0"
+            <label class="btn btn-secondary" style="margin:0"
             data-toggle="popover" data-trigger="hover" data-html="true"
             data-bind="css: {'active': $parent.selected() == name}, attr: {title: getTitle(), 'data-content': getContent()}">
               <span data-bind="text: getLocaleName()"></span>
@@ -107,7 +107,7 @@
       <div class="btn btn-static"
         data-toggle="popover" data-trigger="hover" data-html="true"
         data-bind="attr: {title: getTitle(), 'data-content': getContent()}">
-        <span data-bind="text: getLocaleName() + ' :'"></span>
+        <span class="slider-label" data-bind="text: getLocaleName() + ' :'"></span>
         <!-- TODO: Add validation, http://knockoutjs.com/documentation/extenders.html -->
         <input type="text" style="width: 80px"
          data-bind="value: value, valueUpdate: 'input', attr: {id: id + '_txt'}">
@@ -117,7 +117,7 @@
       <!-- /ko -->
       <!-- ko if: type == 6/*ToolTypeEnum.HELP*/ -->
       <div class="btn-group">
-        <label class="btn btn-danger"
+        <label class="btn btn-danger pull-right"
         data-toggle="popover" data-trigger="hover" data-html="true"
         data-bind="css: {'active': selected() == true}, attr: {title: getTitle(), 'data-content': getContent()}">
           <input id="help" type="checkbox" autocomplete="off"
@@ -188,7 +188,7 @@
       <span id="status" style="display:none;"></span>
     </div>
   </div>
-  <div id="obj_settings" class="selected-tool-bar" style="left:0; width:100%; display:none;">
+  <div id="obj_settings" class="selected-tool-bar" style="display: none">
     <div class="optionsbar">
       <span id="obj_name"></span>
       <span id="p_box">&nbsp;

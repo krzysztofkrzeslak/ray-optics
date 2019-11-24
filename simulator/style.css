@@ -9,7 +9,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 2px;
 }
 .btn-static {
   cursor: default !important;
@@ -55,12 +54,16 @@ input[type="text"] {
 .popover { pointer-events: none; }
 /* styling of selected/current tool bar */
 .selected-tool-bar {
-  background-color:rgb(90,90,90);
+  background-color:rgba(23,162,184, 0.5);
   color:white;
-  opacity:0.8;
   font-size:12pt;
-  padding: 1px;
-  margin: 0px;
+  font-weight: bold;
+  padding: 8px;
+  margin: auto;
+  margin-top: 12px;
+  width: 50%;
+  text-align: center;
+  border-radius: 0.5em;
 }
 
 .toolbar-btn-group{
@@ -70,4 +73,15 @@ input[type="text"] {
 
 .input-group-text{
   border-radius: 0;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  color: white
+}
+
+.slider-label{
+  color: white;
+}
+
+.font-bold{
+  font-weight: bold;
 }
