@@ -53,3 +53,21 @@ input[type="text"] {
 }
 /* Prevent popover flickering when space is not enough */
 .popover { pointer-events: none; }
+/* styling of selected/current tool bar */
+.selected-tool-bar {
+  background-color:rgb(90,90,90);
+  color:white;
+  opacity:0.8;
+  font-size:12pt;
+  padding: 1px;
+  margin: 0px;
+}
+
+.toolbar-btn-group{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.input-group-text{
+  border-radius: 0;
+}

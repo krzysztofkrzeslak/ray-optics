@@ -4466,11 +4466,11 @@ var canvasPainter = {
     //Ctrl+Z
     if (e.ctrlKey && e.keyCode == 90)
     {
-    if (document.getElementById('undo').disabled == false)
-    {
-      undo();
-    }
-    return false;
+      if (document.getElementById('undo').disabled == false)
+      {
+        undo();
+      }
+      return false;
     }
 
     //Ctrl+D

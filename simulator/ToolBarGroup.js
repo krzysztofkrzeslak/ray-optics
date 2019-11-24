@@ -75,16 +75,25 @@ class ToolBarItem {
   }
 }
 
+var GroupTypeEnum = {
+  SIMPLE: 1,
+  DROPDOWN: 2
+};
+Object.freeze(GroupTypeEnum);
+
+
 class ToolBarGroup {
   /**
    * Creates a ToolBarGroup that results in a new toolgroup row in toolbar.
    * @param {string} title
    * @param {ToolBarItem[]} tools
+   * @param {GroupTypeEnum} type
    * @constructor
    */
-  constructor(title, tools) {
+  constructor(title, tools, type) {
     this.title = title;
     this.tools = tools;
+    this.groupType = type;
     for (var i = 0; i < tools.length; i++) {
       this.selected = ko.observable(tools[i].name);
       break;

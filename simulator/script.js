@@ -13,3 +13,8 @@ $(".dropdown-menu > div > label").click(function (e) {
 
 /* Initialize Bootstrap Popover */
 $("[data-toggle=popover]").popover();
+
+/* unset focus on dropdown hide */
+$(document).on('hide.bs.dropdown', function () {
+  document.activeElement.blur();
+});

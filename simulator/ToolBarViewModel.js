@@ -18,7 +18,9 @@ function ToolBarViewModel() {
         ToolTypeEnum.BUTTON, undefined, function () { alert(""); }),
       new ToolBarItem("Open", "open", undefined,
         ToolTypeEnum.BUTTON, undefined, function () { alert(""); })
-    ]),
+      ],
+        GroupTypeEnum.DROPDOWN  //group type of "File"
+      ),
     self.tools = new ToolBarGroup("Tools: ", [
       new ToolBarItem("Ray", "tool_laser", "ray",
         ToolTypeEnum.RADIO),
@@ -33,7 +35,7 @@ function ToolBarViewModel() {
           ToolTypeEnum.RADIO),
         new ToolBarItem("Ideal Curved", "tool_idealmirror", "ideal_curved_mirror",
           ToolTypeEnum.RADIO)
-      ]),
+        ]),
       self.glasses = new ToolBarItem("Glasses", "tool_refractor_", 3, ToolTypeEnum.RADIOLIST, [
         new ToolBarItem("Half-plane", "tool_halfplane", "glass_halfplane",
           ToolTypeEnum.RADIO),
@@ -42,8 +44,8 @@ function ToolBarViewModel() {
         new ToolBarItem("Free-shape", "tool_refractor", "glass",
           ToolTypeEnum.RADIO),
         new ToolBarItem("Ideal Lens", "tool_lens", "ideal_lens",
-          ToolTypeEnum.RADIO)
-      ]),
+          ToolTypeEnum.RADIO)]
+    ),
       new ToolBarItem("Blocker", "tool_blackline", "blocker",
         ToolTypeEnum.RADIO),
       new ToolBarItem("Ruler", "tool_ruler", "ruler",
@@ -52,7 +54,9 @@ function ToolBarViewModel() {
         ToolTypeEnum.RADIO),
       new ToolBarItem("Move View", "tool_", undefined,
         ToolTypeEnum.RADIO)
-    ]),
+    ],
+    GroupTypeEnum.SIMPLE //group type of "Tools"
+  ),
     self.modes = new ToolBarGroup("View: ", [
       new ToolBarItem("Rays", "mode_light", "normal",
         ToolTypeEnum.RADIO),
@@ -62,7 +66,9 @@ function ToolBarViewModel() {
         ToolTypeEnum.RADIO),
       new ToolBarItem("Seen by Observer", "mode_observer", "seen_by_observer",
         ToolTypeEnum.RADIO)
-    ]),
+    ],
+    GroupTypeEnum.SIMPLE  //group type of "View"
+    ),
     new ToolBarGroup("Settings: ", [
       self.rayDensity = new ToolBarItem("Ray Density", "rayDensity", undefined,
         ToolTypeEnum.SLIDE, undefined, undefined,
@@ -78,7 +84,9 @@ function ToolBarViewModel() {
         25, 500, 25, 100),
       new ToolBarItem("Help", "help", undefined,
         ToolTypeEnum.HELP, undefined)
-    ])
+    ],
+    GroupTypeEnum.SIMPLE //group type of "Settings"
+    )
   ];
 }
 
