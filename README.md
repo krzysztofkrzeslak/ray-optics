@@ -11,11 +11,6 @@ Simulate reflection and refraction of light.
 - View images that can be observed from some given position
 - Distance and angular measurement
 
-## Links
-- [Project Page](https://ricktu288.github.io/ray-optics/)
-- [Chrome App](https://chrome.google.com/webstore/detail/ray-optics-simulation/egamlemiidmmmcccadndbjjihkcfiobh)
-- [Documentation](http://chengscott.tw/ray-optics/)
-
 ## Sample files
 - [Sample file folder](/samples)
 
@@ -25,7 +20,7 @@ If you created a good sample, please submit a pull request to let others see you
 
 # Quick Start
 
-Clone the repo: `git clone https://github.com/ricktu288/ray-optics.git`
+Clone the repo: `git clone https://github.com/krzysztofkrzeslak/ray-optics`
 
 # License
 Copyright 2018 Rick Tu, Johnson

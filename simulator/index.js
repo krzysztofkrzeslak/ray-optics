@@ -5100,6 +5100,5 @@ var canvasPainter = {
     document.getElementById('forceStop').innerHTML = getMsg('processing');
 
     document.getElementById('footer_message').innerHTML = getMsg('footer_message');
-    document.getElementById('homepage').innerHTML = getMsg('homepage');
     document.getElementById('source').innerHTML = getMsg('source');
   }

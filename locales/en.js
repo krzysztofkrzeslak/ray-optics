@@ -136,6 +136,6 @@ locales["en"] = {
     "message": "Language: English"
   },
   "footer_message": {
-    "message": "Developed by <a href='https://github.com/ricktu288' style='color:rgba(255,255,255,0.25)'>ricktu288</a>, <a href='https://github.com/j3soon' style='color:rgba(255,255,255,0.25)'>j3soon</a>"
+    "message": "Developed by <a href='https://github.com/ricktu288' style='color:rgba(255,255,255,0.25)'>ricktu288</a>, <a href='https://github.com/j3soon' style='color:rgba(255,255,255,0.25)'>j3soon</a>, <a href='https://github.com/krzysztofkrzeslak' style='color:rgba(255,255,255,0.25)'>krzysztof krzeslak</a>"
   }
 };
